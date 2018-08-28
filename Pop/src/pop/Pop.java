@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pop;
-
+import vistas.principal;
 /**
  *
  * @author Carba
@@ -16,6 +16,8 @@ public class Pop {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        principal p1 = new principal();
+        p1.setVisible(true);
     }
     
 }

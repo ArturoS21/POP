@@ -5,10 +5,16 @@
  */
 package logica;
 
+import javax.swing.ImageIcon;
+import javax.swing.JInternalFrame;
+
 /**
  *
  * @author Carba
  */
 public class utilerias {
     
+    public void icono(JInternalFrame frame, String ruta){ //le pone un ícono al JInternalFrame
+        frame.setFrameIcon(new ImageIcon(ruta));
+    }
 }

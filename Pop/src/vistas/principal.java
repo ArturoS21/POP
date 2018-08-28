@@ -76,6 +76,11 @@ public class principal extends javax.swing.JFrame {
 
         itemEjidoCampos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/photo_add.png"))); // NOI18N
         itemEjidoCampos.setText("EJIDO Y CAMPOS");
+        itemEjidoCampos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemEjidoCamposActionPerformed(evt);
+            }
+        });
         menuAlta.add(itemEjidoCampos);
 
         itemBoletas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/folder_table.png"))); // NOI18N
@@ -105,6 +110,13 @@ public class principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void itemEjidoCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemEjidoCamposActionPerformed
+        // TODO add your handling code here:
+        ejidosyCampos ejc = new ejidosyCampos();
+        escritorio.add(ejc);
+        ejc.show();
+    }//GEN-LAST:event_itemEjidoCamposActionPerformed
 
     /**
      * @param args the command line arguments

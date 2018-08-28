@@ -4,18 +4,20 @@
  * and open the template in the editor.
  */
 package vistas;
+import logica.utilerias;
 
 /**
  *
  * @author Carba
  */
 public class ejidosyCampos extends javax.swing.JInternalFrame {
-
+    utilerias u = new utilerias();
     /**
      * Creates new form ejidosyCampos
      */
     public ejidosyCampos() {
         initComponents();
+        u.icono(this, "imagenes/photo_add.png");
     }
 
     /**

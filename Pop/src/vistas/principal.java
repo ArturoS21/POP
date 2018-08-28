@@ -27,7 +27,7 @@ public class principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        escritorio = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuLogistica = new javax.swing.JMenu();
         menuAlta = new javax.swing.JMenu();
@@ -40,37 +40,45 @@ public class principal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("POP");
 
-        jDesktopPane1.setBackground(new java.awt.Color(204, 204, 204));
+        escritorio.setBackground(new java.awt.Color(204, 204, 204));
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
+        escritorio.setLayout(escritorioLayout);
+        escritorioLayout.setHorizontalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 690, Short.MAX_VALUE)
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        escritorioLayout.setVerticalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 456, Short.MAX_VALUE)
         );
 
+        menuLogistica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/lorry.png"))); // NOI18N
         menuLogistica.setText("LOGISTICA CAMPO Y ENTRADA DE ALMACEN");
 
+        menuAlta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/flag_red.png"))); // NOI18N
         menuAlta.setText("ALTA");
 
+        itemFletero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/group_add.png"))); // NOI18N
         itemFletero.setText("FLETERO");
         menuAlta.add(itemFletero);
 
+        itemTrillador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/group_add.png"))); // NOI18N
         itemTrillador.setText("TRILLADOR");
         menuAlta.add(itemTrillador);
 
+        itemBoletero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/group_add.png"))); // NOI18N
         itemBoletero.setText("BOLETERO");
         menuAlta.add(itemBoletero);
         menuAlta.add(jSeparator1);
 
+        itemEjidoCampos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/photo_add.png"))); // NOI18N
         itemEjidoCampos.setText("EJIDO Y CAMPOS");
         menuAlta.add(itemEjidoCampos);
 
+        itemBoletas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/folder_table.png"))); // NOI18N
         itemBoletas.setText("ASIGNACIÓN DE BOLETAS");
         menuAlta.add(itemBoletas);
 
@@ -78,6 +86,7 @@ public class principal extends javax.swing.JFrame {
 
         jMenuBar1.add(menuLogistica);
 
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/paste_plain.png"))); // NOI18N
         jMenu2.setText("COORDINADOR");
         jMenuBar1.add(jMenu2);
 
@@ -87,11 +96,11 @@ public class principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(escritorio)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(escritorio)
         );
 
         pack();
@@ -133,12 +142,12 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenuItem itemBoletas;
     private javax.swing.JMenuItem itemBoletero;
     private javax.swing.JMenuItem itemEjidoCampos;
     private javax.swing.JMenuItem itemFletero;
     private javax.swing.JMenuItem itemTrillador;
-    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPopupMenu.Separator jSeparator1;

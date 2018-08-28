@@ -18,6 +18,7 @@ public class Pop {
         // TODO code application logic here
         principal p1 = new principal();
         p1.setVisible(true);
+        System.out.println("hola mundo");
     }
     
 }

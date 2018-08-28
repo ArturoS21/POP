@@ -16,7 +16,11 @@ public class principal extends javax.swing.JFrame {
      */
     public principal() {
         initComponents();
+        System.out.println("hola mundo");
+        System.out.println("soy arturo");
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

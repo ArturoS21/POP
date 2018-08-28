@@ -27,17 +27,71 @@ public class principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        menuLogistica = new javax.swing.JMenu();
+        menuAlta = new javax.swing.JMenu();
+        itemFletero = new javax.swing.JMenuItem();
+        itemTrillador = new javax.swing.JMenuItem();
+        itemBoletero = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        itemEjidoCampos = new javax.swing.JMenuItem();
+        itemBoletas = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jDesktopPane1.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 690, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 456, Short.MAX_VALUE)
+        );
+
+        menuLogistica.setText("LOGISTICA CAMPO Y ENTRADA DE ALMACEN");
+
+        menuAlta.setText("ALTA");
+
+        itemFletero.setText("FLETERO");
+        menuAlta.add(itemFletero);
+
+        itemTrillador.setText("TRILLADOR");
+        menuAlta.add(itemTrillador);
+
+        itemBoletero.setText("BOLETERO");
+        menuAlta.add(itemBoletero);
+        menuAlta.add(jSeparator1);
+
+        itemEjidoCampos.setText("EJIDO Y CAMPOS");
+        menuAlta.add(itemEjidoCampos);
+
+        itemBoletas.setText("ASIGNACIÓN DE BOLETAS");
+        menuAlta.add(itemBoletas);
+
+        menuLogistica.add(menuAlta);
+
+        jMenuBar1.add(menuLogistica);
+
+        jMenu2.setText("COORDINADOR");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
 
         pack();
@@ -79,5 +133,16 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem itemBoletas;
+    private javax.swing.JMenuItem itemBoletero;
+    private javax.swing.JMenuItem itemEjidoCampos;
+    private javax.swing.JMenuItem itemFletero;
+    private javax.swing.JMenuItem itemTrillador;
+    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JMenu menuAlta;
+    private javax.swing.JMenu menuLogistica;
     // End of variables declaration//GEN-END:variables
 }
